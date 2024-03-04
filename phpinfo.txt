@@ -1,0 +1,40 @@
+PHP includes a complete object model.
+Some of its features are:(visibility, abstract and final classes and methods),
+additional magic methods, interfaces, and cloning.
+
+PHP treats objects in the same way as references or handles,
+meaning that each variable contains an object reference rather than a copy of the entire object.
+See Objects and References.
+/***********Visibility ***********/
+The visibility of a property, a method or (as of PHP 7.1.0) a constant can be defined 
+by prefixing the declaration with the keywords (public, protected or private).
+Class members declared (public) can be accessed everywhere.
+Members declared (protected) can be accessed only within the class itself and by inheriting and parent classes.
+Members declared as (private) may only be accessed by the class that defines the member.
+
+/******************Property Visibility? ****/
+Class properties may be defined as public, private, or protected. Properties declared without any explicit visibility keyword are defined as (public).
+/**************Method Visibility *****************/
+Class methods may be defined as public, private, or protected. Methods declared without any explicit visibility keyword are defined as (public).
+/*********************Constant Visibility ************/
+As of PHP 7.1.0, class (constants) may be defined as (public, private, or protected).
+(Constants) declared without any explicit visibility keyword are defined as (public).
+
+/**********/
+Just a quick note that it's possible to declare visibility for multiple properties at the same time, by separating them by commas.
+/*****************************/
+Beware: Visibility works on a per-class-base and does not prevent instances of the same class accessing each others properties!
+/*****************************/
+Members declared protected can be accessed only within 
+> the class itself and by inherited classes. Members declared 
+> as private may only be accessed by the class that defines 
+> the member.
+
+This is not strictly true. Code outside the object can get and set private and protected members:
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
